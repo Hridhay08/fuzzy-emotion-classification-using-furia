@@ -1,0 +1,53 @@
+FURIA rules:
+===========
+
+(COSINE14 in [-inf, -inf, -0.495117, -0.493013]) and (COSINE52 in [0.967544, 0.967755, inf, inf]) and (COSINE31 in [-inf, -inf, 0.873145, 0.899657]) => emotion_class=anger (CF = 0.71)
+(COSINE7 in [0.293557, 0.311204, inf, inf]) and (COSINE49 in [-inf, -inf, -0.882382, -0.875948]) and (COSINE28 in [-0.31375, -0.313289, inf, inf]) and (COSINE44 in [-inf, -inf, 0.839297, 0.83957]) => emotion_class=anger (CF = 0.77)
+(COSINE44 in [0.793247, 0.793309, inf, inf]) and (COSINE21 in [-inf, -inf, 0.500897, 0.512643]) and (COSINE31 in [0.854788, 0.873751, inf, inf]) and (COSINE40 in [0.863779, 0.867106, inf, inf]) => emotion_class=disgust (CF = 0.92)
+(COSINE44 in [0.792624, 0.793482, inf, inf]) and (COSINE49 in [-0.84427, -0.84271, inf, inf]) and (COSINE22 in [0.613145, 0.636612, inf, inf]) => emotion_class=disgust (CF = 0.84)
+(COSINE11 in [-inf, -inf, -0.080816, -0.033114]) and (COSINE6 in [-inf, -inf, 0.465746, 0.478527]) and (COSINE21 in [0.414845, 0.433701, inf, inf]) => emotion_class=disgust (CF = 0.83)
+(COSINE9 in [0.796301, 0.811722, inf, inf]) and (COSINE15 in [0.925992, 0.93921, inf, inf]) => emotion_class=disgust (CF = 0.84)
+(COSINE38 in [-inf, -inf, 0.717939, 0.71865]) and (COSINE5 in [0.966371, 0.970143, inf, inf]) => emotion_class=disgust (CF = 0.63)
+(COSINE13 in [0.919182, 0.930624, inf, inf]) and (COSINE52 in [-inf, -inf, 0.842046, 0.842271]) => emotion_class=disgust (CF = 0.69)
+(COSINE40 in [-inf, -inf, 0.73465, 0.738485]) and (COSINE32 in [-inf, -inf, 0.052559, 0.05547]) and (COSINE51 in [0.877397, 0.890435, inf, inf]) and (COSINE13 in [-inf, -inf, 0.861228, 0.864139]) => emotion_class=fear (CF = 0.84)
+(COSINE11 in [0.658676, 0.662429, inf, inf]) => emotion_class=fear (CF = 0.61)
+(COSINE48 in [0.987978, 0.98836, inf, inf]) and (COSINE38 in [-inf, -inf, 0.806483, 0.810009]) and (COSINE10 in [-inf, -inf, 0.776302, 0.79011]) => emotion_class=happiness (CF = 0.95)
+(COSINE50 in [0.993659, 0.994893, inf, inf]) and (COSINE31 in [0.786318, 0.792624, inf, inf]) => emotion_class=happiness (CF = 0.94)
+(COSINE52 in [-inf, -inf, 0.874648, 0.883094]) and (COSINE50 in [0.968707, 0.972387, inf, inf]) and (COSINE38 in [-inf, -inf, 0.79003, 0.79814]) => emotion_class=happiness (CF = 0.95)
+(COSINE52 in [0.794187, 0.866186, inf, inf]) and (COSINE44 in [-inf, -inf, 0.776114, 0.783111]) and (COSINE29 in [0.188985, 0.200654, inf, inf]) and (COSINE48 in [-inf, -inf, 0.977722, 0.979227]) and (COSINE39 in [-inf, -inf, 0.713364, 0.713448]) and (COSINE47 in [0.135786, 0.139644, inf, inf]) => emotion_class=neutral (CF = 1.0)
+(COSINE53 in [-inf, -inf, -0.507687, -0.243942]) and (COSINE38 in [0.821829, 0.823313, inf, inf]) and (COSINE18 in [-inf, -inf, 0.785568, 0.795617]) and (COSINE46 in [-inf, -inf, -0.094212, -0.060847]) and (COSINE32 in [0.058722, 0.061897, inf, inf]) => emotion_class=neutral (CF = 0.99)
+(COSINE51 in [0.737703, 0.88691, inf, inf]) and (COSINE35 in [-inf, -inf, 0.792624, 0.803694]) and (COSINE13 in [0.840173, 0.840928, inf, inf]) and (COSINE7 in [-inf, -inf, 0.23049, 0.231261]) and (COSINE9 in [-inf, -inf, 0.671067, 0.673828]) => emotion_class=neutral (CF = 0.99)
+(COSINE51 in [0.880641, 0.892484, inf, inf]) and (COSINE12 in [-inf, -inf, 0.802291, 0.816282]) and (COSINE27 in [0.99801, 0.998022, inf, inf]) and (COSINE30 in [0.633898, 0.634465, inf, inf]) and (COSINE38 in [-inf, -inf, 0.836525, 0.837711]) => emotion_class=neutral (CF = 0.99)
+(COSINE52 in [0.797009, 0.872263, inf, inf]) and (COSINE6 in [0.45168, 0.472589, inf, inf]) and (COSINE29 in [0.172273, 0.181087, inf, inf]) and (COSINE38 in [0.819017, 0.820915, inf, inf]) and (COSINE10 in [-inf, -inf, 0.617822, 0.619644]) and (COSINE8 in [-inf, -inf, 0.691267, 0.6952]) => emotion_class=neutral (CF = 0.99)
+(COSINE53 in [-inf, -inf, -0.557879, -0.486408]) and (COSINE7 in [-inf, -inf, 0.307894, 0.313176]) and (COSINE29 in [0.006097, 0.181087, inf, inf]) and (COSINE49 in [-0.924414, -0.921811, inf, inf]) and (COSINE46 in [-inf, -inf, -0.240274, -0.236956]) => emotion_class=neutral (CF = 0.99)
+(COSINE51 in [0.859801, 0.873966, inf, inf]) and (COSINE39 in [0.581238, 0.591364, inf, inf]) and (COSINE37 in [-inf, -inf, 0.311473, 0.320335]) and (COSINE13 in [0.871576, 0.873581, inf, inf]) and (COSINE13 in [-inf, -inf, 0.902227, 0.903071]) and (COSINE23 in [0.246309, 0.248646, inf, inf]) => emotion_class=neutral (CF = 0.99)
+(COSINE51 in [0.925385, 0.930985, inf, inf]) and (COSINE41 in [-inf, -inf, -0.058722, -0.045408]) and (COSINE52 in [-inf, -inf, 0.940516, 0.941446]) and (COSINE48 in [-inf, -inf, 0.985262, 0.986313]) => emotion_class=neutral (CF = 0.98)
+(COSINE35 in [-inf, -inf, 0.816968, 0.860657]) and (COSINE48 in [0.899337, 0.921377, inf, inf]) and (COSINE24 in [-inf, -inf, 0.905595, 0.914008]) and (COSINE15 in [0.917087, 0.922751, inf, inf]) and (COSINE9 in [-inf, -inf, 0.678727, 0.73994]) => emotion_class=neutral (CF = 0.98)
+(COSINE8 in [0.582414, 0.662555, inf, inf]) and (COSINE35 in [-inf, -inf, 0.816968, 0.824042]) and (COSINE7 in [-inf, -inf, 0.261542, 0.263887]) and (COSINE13 in [0.874701, 0.876027, inf, inf]) and (COSINE5 in [-inf, -inf, 0.983922, 0.985859]) => emotion_class=neutral (CF = 0.99)
+(COSINE29 in [-inf, -inf, 0.153707, 0.200343]) and (COSINE46 in [-0.00451, -0.003093, inf, inf]) and (COSINE9 in [-inf, -inf, 0.447214, 0.460416]) => emotion_class=sadness (CF = 0.72)
+(COSINE52 in [0.983726, 0.984109, inf, inf]) and (COSINE43 in [-inf, -inf, 0.018015, 0.053023]) and (COSINE9 in [-inf, -inf, 0.693043, 0.723738]) => emotion_class=sadness (CF = 0.78)
+(COSINE28 in [-0.127689, -0.062905, inf, inf]) and (COSINE9 in [-inf, -inf, 0.570185, 0.571388]) and (COSINE36 in [0.273775, 0.276567, inf, inf]) and (COSINE9 in [0.538389, 0.538878, inf, inf]) => emotion_class=sadness (CF = 0.72)
+(COSINE51 in [-inf, -inf, 0.796429, 0.810849]) and (COSINE31 in [-inf, -inf, 0.776114, 0.792624]) => emotion_class=surprise (CF = 0.97)
+
+Number of Rules : 27
+83.69565217391305
+Correctly Classified Instances         231               83.6957 %
+Incorrectly Classified Instances        45               16.3043 %
+Kappa statistic                          0.62  
+Mean absolute error                      0.0431
+Root mean squared error                  0.1837
+Relative absolute error                 33.4255 %
+Root relative squared error             73.1424 %
+Total Number of Instances              276     
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.313    0.004    0.833      0.313    0.455      0.495    0.794     0.487     anger
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.014     contempt
+                 0.600    0.008    0.818      0.600    0.692      0.686    0.894     0.746     disgust
+                 0.000    0.000    ?          0.000    ?          ?        0.494     0.014     fear
+                 0.778    0.004    0.933      0.778    0.848      0.843    0.967     0.854     happiness
+                 0.974    0.435    0.834      0.974    0.899      0.631    0.863     0.896     neutral
+                 0.000    0.015    0.000      0.000    0.000      -0.021   0.608     0.070     sadness
+                 0.850    0.000    1.000      0.850    0.919      0.917    0.975     0.954     surprise
+Weighted Avg.    0.837    0.303    ?          0.837    ?          ?        0.858     0.816     

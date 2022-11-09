@@ -37,6 +37,8 @@ CIRCLE_RADIUS = 2
 CIRCLE_THICKNESS = -1
 THICKNESS = 1
 
+print("Example Git")
+
 # function to draw triangle on image
 def cv2triangle(image, point1, point2, point3, color, thickness):
     cv2.line(image, point1, point2, color, thickness, cv2.LINE_AA)

@@ -5,30 +5,28 @@ from weka.classifiers import Evaluation
 from weka.core.classes import Random
 
 # general global variables
+COSINE_DATASET_PATH = "emotion_cosine_dataset.arff"
 MODEL_PATH = "emotion_recog_fuzzy_model.model"
 TRAINING_LOGS = "fuzzy_training_logs.txt"
+FURIA_CLASSIFIER_NAME = "weka.classifiers.rules.FURIA"
+FURIA_CLASSIFIER_OPTIONS = ["-F", "3","-N","2.0","-O","2","-S","1","-p","0","-s","0"]
+TRAIN_DATA_PERCENT_SPLIT = 70.0
+CROSS_VALIDATION_FOLDS = 10
+RAND_GEN_SEED = 1
 
 # start JVM, load dataset
-jvm.start(packages=True)
-data_dir = "emotion_cosine_dataset.arff"
-data = converters.load_any_file(data_dir)
+jvm.start(system_cp=True, packages=True)
+data = converters.load_any_file(COSINE_DATASET_PATH)
 data.class_is_last()
 
-# split dataset into training and test sets
-train, test = data.train_test_split(70.0, Random(1))
-
-try:
-    # load existing classifier model if available
-    cls,_ = Classifier.deserialize(MODEL_PATH)
-except:
-    # otherwise load FURIA classifier, build classifier on training set, save classifier model as file
-    cls = Classifier(classname="weka.classifiers.rules.FURIA", options=["-F", "3","-N","2.0","-O","2","-S","1","-p","0","-s","0"])
-    cls.build_classifier(train)
-    cls.serialize(MODEL_PATH)
+# load FURIA classifier, build classifier on entire data set, save classifier model as file
+cls = Classifier(classname=FURIA_CLASSIFIER_NAME, options=FURIA_CLASSIFIER_OPTIONS)
+cls.build_classifier(data)
+cls.serialize(MODEL_PATH)
 
 # evaluation and cross-validation
-evl = Evaluation(train)
-evl.crossvalidate_model(cls, test, 10, Random(1))
+evl = Evaluation(data)
+evl.crossvalidate_model(cls, data, CROSS_VALIDATION_FOLDS, Random(RAND_GEN_SEED))
 
 # printing logs
 print(cls)

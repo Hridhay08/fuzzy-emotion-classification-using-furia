@@ -23,6 +23,7 @@ DATA_COSINE_ATTRIBUTES = \
 "COSINE45", "COSINE46", "COSINE47", "COSINE48", "COSINE49", "COSINE50", "COSINE51", "COSINE52", "COSINE53"]
 DATA_EMOTION_ATTRIBUTE = "emotion_class"
 DATA_EMOTION_LABELS = ["anger", "contempt", "disgust", "fear", "happiness", "neutral", "sadness", "surprise"]
+DEFAULT_EMOTION_PREDICTION = "neutral"
 
 # settings for drawing
 FONT = cv2.FONT_HERSHEY_SIMPLEX
@@ -107,7 +108,11 @@ while True:
         # delete dataset and recreate it to avoid memory leaks due to boundless addition of data-points to dataset
         del dataset
         dataset = copy.deepcopy(dataset_copy)
-        detected_emotion = DATA_EMOTION_LABELS[int(pred)]
+        # check for NaN condition if classifier unable to classify
+        if str(pred) == 'nan':
+            detected_emotion = DEFAULT_EMOTION_PREDICTION
+        else:
+            detected_emotion = DATA_EMOTION_LABELS[int(pred)]
 
         # draw coordinates, coordinate index, triangles, face rectangle, and emotions of subject on image
         for i, (x, y) in enumerate(shape):

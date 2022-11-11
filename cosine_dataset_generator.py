@@ -1,12 +1,8 @@
-# import the necessary packages
 import cv2
 import dlib
 from imutils import face_utils
 import weka.core.jvm as jvm
 from weka.core.dataset import Attribute, Instance, Instances
-import cv2
-import dlib
-from imutils import face_utils
 import os
 
 # facial landmark detection variables

@@ -1,7 +1,6 @@
 import weka.core.jvm as jvm
 import weka.core.converters as converters
-from weka.classifiers import Classifier
-from weka.classifiers import Evaluation
+from weka.classifiers import Classifier, Evaluation
 from weka.core.classes import Random
 
 # general global variables

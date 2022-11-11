@@ -1,0 +1,9 @@
+numpy
+opencv-contrib-python
+imutils
+dlib
+python-javabridge
+python-weka-wrapper3
+pillow
+matplotlib
+pygraphviz
